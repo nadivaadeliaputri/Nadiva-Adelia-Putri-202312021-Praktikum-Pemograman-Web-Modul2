@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Grid Layout</title>
+<style>
+  /* Gaya Umum */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 15px; 
+    padding: 10px;
+    background-color: #f0f0f0; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 960px; 
+    margin: 20px auto; 
+  }
+
+  .grid-item {
+    background-color: #2196F3; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: font-size 0.5s ease; 
+  }
+
+  .responsive-text {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  body {
+    background-color: #ADD8E6; 
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #FF6347; 
+      padding: 10px; 
+    }
+
+    .grid-container {
+      grid-template-columns: 1fr; 
+      gap: 10px; 
+      padding: 10px;
+      margin: 10px auto;
+    }
+
+    .grid-item {
+      padding: 15px; 
+    }
+
+    .responsive-text {
+      font-size: 16px; 
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item"><span class="responsive-text">Item 1</span></div>
+    <div class="grid-item"><span class="responsive-text">Item 2</span></div>
+    <div class="grid-item"><span class="responsive-text">Item 3</span></div>
+    <div class="grid-item"><span class="responsive-text">Item 4</span></div>
+    <div class="grid-item"><span class="responsive-text">Item 5</span></div>
+    <div class="grid-item"><span class="responsive-text">Item 6</span></div>
+  </div>
+
+</body>
+</html>

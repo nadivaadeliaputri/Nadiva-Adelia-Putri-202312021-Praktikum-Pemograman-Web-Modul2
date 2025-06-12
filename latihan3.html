@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan Selector CSS</title>
+    <style>
+        /* Gaya untuk paragraf default */
+        p {
+            color: #333; /* Warna teks gelap */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Kelas-kelas untuk paragraf dengan warna latar belakang berbeda */
+        .latar-biru {
+            background-color: #e0f2f7; /* Biru muda */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid #007bff;
+        }
+
+        .latar-hijau {
+            background-color: #e6ffe6; /* Hijau muda */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid #28a745;
+        }
+
+        .latar-kuning {
+            background-color: #fffacd; /* Kuning muda */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid #ffc107;
+        }
+
+        /* ID untuk elemen dengan ukuran font yang diubah */
+        #judul-utama {
+            font-size: 36px; /* Ukuran font lebih besar */
+            color: #8a2be2; /* Ungu kebiruan */
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        #deskripsi-singkat {
+            font-size: 20px; /* Ukuran font diubah */
+            color: #555;
+            text-align: justify;
+            line-height: 1.5;
+            padding: 15px;
+            border: 1px dashed #ccc;
+            background-color: #f9f9f9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="judul-utama">Halaman Latihan Selector CSS</h1>
+
+    <p id="deskripsi-singkat">
+        Ini adalah deskripsi singkat tentang halaman ini. Ukuran font pada paragraf ini diatur
+        menggunakan ID selector, membuatnya berbeda dari paragraf lainnya.
+    </p>
+
+    <h2>Contoh Paragraf Berbeda Kelas</h2>
+
+    <p class="latar-biru">
+        Paragraf ini menggunakan kelas `latar-biru`. Latar belakangnya berwarna biru muda dan
+        memiliki garis biru di sisi kiri.
+    </p>
+
+    <p class="latar-hijau">
+        Paragraf ini menggunakan kelas `latar-hijau`. Latar belakangnya berwarna hijau muda
+        dan memiliki garis hijau di sisi kiri.
+    </p>
+
+    <p>Ini adalah paragraf biasa tanpa kelas khusus, jadi hanya menerapkan gaya default 'p'.</p>
+
+    <p class="latar-kuning">
+        Paragraf ini menggunakan kelas `latar-kuning`. Latar belakangnya berwarna kuning muda
+        dan memiliki garis kuning di sisi kiri.
+    </p>
+
+    <p class="latar-hijau">
+        Anda bisa menggunakan kembali kelas yang sama untuk paragraf lain.
+    </p>
+
+</body>
+</html>

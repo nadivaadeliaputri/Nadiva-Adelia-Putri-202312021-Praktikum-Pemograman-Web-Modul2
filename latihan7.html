@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flex Container Example</title>
+<style>
+  body {
+    font-family: sans-serif;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    border: 2px solid #333;
+    padding: 20px;
+    width: 80%; 
+    max-width: 600px; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+
+  .item {
+    background-color: rgb(242, 119, 195);
+    padding: 20px;
+    margin: 10px; 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    flex-grow: 1; 
+    min-width: 100px; 
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="item">Nadiva</div>
+  <div class="item">Adelia</div>
+  <div class="item">Putri</div>
+</div>
+
+</body>
+</html>

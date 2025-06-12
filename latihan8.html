@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid Container with Spanning Item</title>
+<style>
+  body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .grid-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, minmax(100px, auto)); 
+    gap: 15px; 
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .grid-item {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-1 { background-color: #FF5733; } /* Merah */
+  .item-2 { background-color: #33FF57; } /* Hijau */
+  .item-3 { background-color: #3357FF; } /* Biru */
+  .item-4 { background-color: #FF33A1; } /* Merah Muda */
+  .item-5 { background-color: #A133FF; } /* Ungu */
+  .item-6 { background-color: #FFC300; } /* Kuning */
+
+  .item-span-2-columns {
+    grid-column: span 2; 
+    background-color: #1ABC9C; 
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item item-1">Item 1</div>
+  <div class="grid-item item-2">Item 2</div>
+  <div class="grid-item item-3 item-span-2-columns">Item 3 (2 Kolom)</div>
+  <div class="grid-item item-4">Item 4</div>
+  <div class="grid-item item-5">Item 5</div>
+  <div class="grid-item item-6">Item 6</div>
+</div>
+
+</body>
+</html>
